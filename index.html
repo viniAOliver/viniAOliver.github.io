@@ -19,31 +19,33 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/profile-img.png"
-              loading="eager"
-              alt="Foto de perfil"
-              class="header__logo-img"
-            />
+        <a href="./index.html#home">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img
+                src="./assets/png/profile-img.png"
+                loading="eager"
+                alt="Foto de perfil"
+                class="header__logo-img"
+              />
+            </div>
+            <span class="header__logo-sub">Vinicius Alves</span>
           </div>
-          <span class="header__logo-sub">Vinicius Alves</span>
-        </div>
+        </a>
         <div class="header__main">
           <nav>
             <ul class="header__links">
               <li class="header__link-wrapper">
-                <a href="./index.html" class="header__link"> Início </a>
+                <a href="./index.html#home" class="header__link"> Início </a>
               </li>
               <li class="header__link-wrapper">
                 <a href="./index.html#about" class="header__link"> Sobre </a>
               </li>
-              <!-- <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projetos
-              </a>
-            </li> -->
+              <li class="header__link-wrapper">
+                <a href="./index.html#projects" class="header__link">
+                  Projetos
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -52,21 +54,21 @@
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Início </a>
+              <a href="./index.html#home"> Início </a>
             </li>
 
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> Sobre </a>
             </li>
 
-            <!-- <li class="header__sm-menu-link">
+            <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projetos </a>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="home-hero">
+    <section id="home" class="home-hero">
       <div class="home-hero__content">
         <h1 class="heading-primary">Olá! Meu nome é Vinicius</h1>
         <div class="home-hero__info">
@@ -76,9 +78,9 @@
             artificial e criptografia pós-quântica.
           </p>
         </div>
-        <!-- <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projetos</a>
-        </div> -->
+        <div class="home-hero__cta">
+          <a href="./index.html#projects" class="btn btn--bg">Projetos</a>
+        </div>
       </div>
       <div class="home-hero__socials">
         <div class="home-hero__social">
@@ -293,7 +295,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="projects" class="projects sec-pad">
+    <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projetos</span>
@@ -315,13 +317,20 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Guys on Work</h3>
+              <h3 class="projects__row-content-title">X-TF-IDF</h3>
               <p class="projects__row-content-desc">
-                Este projeto tem como principal objetivo criar um aplicativo que
-                facilite a organização das funções de colegas em um projeto.
+                X-TF-IDF é uma ferramenta baseada em Python para coleta e
+                análise de postagens do Twitter. Ela utiliza web scraping com
+                acesso à API para extrair tweets do
+                <a href="https://x.com/">X/Twitter</a> e aplica o modelo TF-IDF
+                (Frequência de Termo - Frequência Inversa em Documentos) para
+                avaliar a relevância dos termos no conjunto de dados coletado.
+                Esta ferramenta é ideal para mineração de opiniões e
+                experimentos de vetorização em PLN (Processamento de Linguagem
+                Natural).
               </p>
               <a
-                href="./guys-on-work.html"
+                href="./x-tf-idf.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -331,7 +340,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- <section class="reference-section">
       <div class="reference-container">
         <h2 class="reference-title">O que dizem sobre mim</h2>
@@ -385,7 +394,7 @@
                   class="main-footer__icon"
                   src="./assets/svg/linkedin-ico.svg"
                   loading="lazy"
-                  alt="icon"
+                  alt="LinkedIn icon"
                 />
               </a>
               <a
@@ -397,7 +406,7 @@
                   class="main-footer__icon"
                   src="./assets/svg/github-ico.svg"
                   loading="lazy"
-                  alt="icon"
+                  alt="GitHub icon"
                 />
               </a>
               <a
@@ -409,7 +418,7 @@
                   class="main-footer__icon"
                   loading="lazy"
                   src="./assets/svg/leetcode-ico.svg"
-                  alt="icon"
+                  alt="LeetCode icon"
                 />
               </a>
               <a
@@ -421,7 +430,7 @@
                   class="main-footer__icon"
                   loading="lazy"
                   src="./assets/svg/instagram-ico.svg"
-                  alt="icon"
+                  alt="Instagram icon"
                 />
               </a>
             </div>
